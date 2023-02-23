@@ -37,7 +37,7 @@ picfloat();
 
 function SetHome(obj){ 
 	try{ 
-		obj.style.behavior='url(#default#homepage)';obj.setHomePage('http://www.wurongbo.com'); 
+		obj.style.behavior = 'url(#default#homepage)'; obj.setHomePage('https://www.hut.edu.cn/');
 		} 
 	catch(e){ 
 		if(window.netscape) { 
@@ -48,19 +48,19 @@ function SetHome(obj){
 				alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。"); 
 				} 
 	var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch); 
-	prefs.setCharPref('browser.startup.homepage','http://www.wurongbo.com'); 
+			prefs.setCharPref('browser.startup.homepage','https://www.hut.edu.cn/');
 	}else{ 
-			alert("您的浏览器不支持，请按照下面步骤操作：\n1.打开浏览器设置。\n2.点击设置网页。\n3.输入："+'http://www.wurongbo.com'+"点击确定。"); 
+			alert("您的浏览器不支持，请按照下面步骤操作：\n1.打开浏览器设置。\n2.点击设置网页。\n3.输入：" +'https://www.hut.edu.cn/'+"点击确定。");
 			} 
 		} 
 	} 
 function shoucang(){ 
 	try{ 
-		window.external.addFavorite('http://www.wurongbo.com/','荣波矿粉加工厂'); 
+		window.external.addFavorite('https://www.hut.edu.cn/','湖南工业大学');
 		} 
 	catch (e){ 
 			try{ 
-				window.sidebar.addPanel('http://www.wurongbo.com/','荣波矿粉加工厂', ""); 
+				window.sidebar.addPanel('https://www.hut.edu.cn/','湖南工业大学', "");
 				} 
 	catch (e){ 
 			alert("加入收藏失败，请使用Ctrl+D进行添加"); 
